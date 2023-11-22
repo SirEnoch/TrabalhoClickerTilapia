@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- faz o zoom-->
+        <title>TilapiaClicker</title><!--o titulo do jogo-->
+        <link href="style.css" rel="stylesheet" type="text/css" />
+        <link rel="icon" type="image/png" sizes="32x32"
+    href="images/favicon.png"> <!--adicina a fotinha na pagina-->
+    </head>
+
+    <body>
+        <script src="script.js"></script>
+
+        <img src="images/tilapia.jpg" id="botaoclick"
+        onclick="increment()" class="center"><!--imagem para clicar-->
+
+
+          <div id="info">
+
+
+            <p id="contatilapias">Tilapias = <span id="MostrarTilapias"
+            class="number center">0</span></p>
+
+
+            <p>Tilapias por segundo = <span id="MostrarTilapiasPorSec"
+            class="number center">0</span></p>
+
+            <p>Tilapias por clique = <span id="MostarTilapiasPorClique"
+            class="number center">1</span></p>
+            
+            <p id="gameOver"></p>
+
+            <!--ferramentas que podem ser compradas-->
+            <div class="itemContainer">
+                <div class="item">
+                    <div class="containerImage">
+                        <img>
+
+                        <div class="botaocompraraitem">
+
+                            <button>
+                        </div>
+                    </div>
+                    <div class="containerTexto">
+                        <p></p>
+
+                        <p></p>
+
+                        <p></p>
+                    </div>
+
+                </div>
+
+                <div class="item">
+
+                </div>
+
+                <div class="item">
+
+                </div>
+
+                <div class="item">
+
+                </div>
+            </div>
+          </div>
+    </body>
+</html>
