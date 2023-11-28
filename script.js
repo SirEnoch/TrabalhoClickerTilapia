@@ -55,7 +55,7 @@ function increment() {
     tilapias += tilapiasporclick;
     document.getElementById("MostrarTilapias").innerText = tilapias;
 
-    if(tilapias>=50000000){
+    if(tilapias>=7800000000){
         document.getElementById("gameOver").innerText = "Você ganhou o jogo! As tilapias dominaram o mundo!"
     }
 }
