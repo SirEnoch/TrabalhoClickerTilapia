@@ -205,7 +205,7 @@ function buyiscagrande(){
         iscagrande++;
         document.getElementById("IscaGrandeQuant").innerText = iscagrande;
 
-        custoiscapq *=2;
+        custoiscagr *=2;
         document.getElementById("IscaGrandeCusto").innerText = custoiscagr;
         
         tilapiasporsec *=1.20;
