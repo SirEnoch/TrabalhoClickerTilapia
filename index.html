@@ -12,22 +12,23 @@
     <body>
         <script src="script.js"></script>
 
+        <center>
         <img src="images/tilapia.jpg" id="botaoclick"
         onclick="increment()" class="center"><!--imagem para clicar-->
 
 
           <div id="info">
 
+            
+            <p id="contatilapias" class="center">Tilapias = <span id="MostrarTilapias"
+            class="number">0</span></p>
 
-            <p id="contatilapias">Tilapias = <span id="MostrarTilapias"
-            class="number center">0</span></p>
 
-
-            <p>Tilapias por segundo = <span id="MostrarTilapiasPorSec"
-            class="number center">0</span></p>
+            <p>Tilapias por segundo  = <span id="MostrarTilapiasPorSec"
+            class="number">0</span></p>
 
             <p>Tilapias por clique = <span id="MostarTilapiasPorClique"
-            class="number center">1</span></p>
+            class="number">1</span></p>
             
             <p id="gameOver"></p>
 
@@ -35,8 +36,8 @@
             <div class="itemContainer">
                 <div class="item">
                     <div class="containerImage">
-                        <img src="images/items/varabambu.jpg" class="=itemimage"
-                        style="width:100px;height:170px;">
+                        <img src="images/items/varabambu.jpg" class="itemimage"
+                        style="width:230px;height:270px;">
 
                         <div class="botaocompraraitem">
 
@@ -57,7 +58,7 @@
                 <div class="item">
                     <div class="containerImage">
                         <img src="images/items/acessorios-anzol-para-pesca-anzol-inline-p-isca-artificial-olho-invertido--p-1652959710827.jpg" class="=itemimage"
-                        style="width:100px;height:170px;">
+                        style="width:230px;height:270px;">
 
                         <div class="botaocompraraitem">
 
@@ -77,7 +78,7 @@
                 <div class="item">
                     <div class="containerImage">
                         <img src="images/items/dam-fighter-pro-combo-tele-spinning-rod.jpg" class="=itemimage"
-                        style="width:100px;height:170px;">
+                        style="width:230px;height:270px;">
 
                         <div class="botaocompraraitem">
 
@@ -98,24 +99,166 @@
                 <div class="item">
                     <div class="containerImage">
                         <img src="images/items/51zI55m2LdL._AC_UF1000,1000_QL80_.jpg" class="=itemimage"
-                        style="width:100px;height:170px;">
+                        style="width:230px;height:270px;">
 
                         <div class="botaocompraraitem">
 
-                            <button onclick="buyanzolextra()" class="buybutton">Comprar</button>
+                            <button onclick="buyanzolgrande()" class="buybutton">Comprar</button>
                         </div>
                     </div>
 
                     <div class="containerTexto">
                         <p>Anzol Grande: <span id="AnzolGrandeQuant">0</span></p>
 
-                        <p>Anzol Grande custo: <span id="AnzolGrandeCusto">10</span> </p>
+                        <p>Anzol Grande custo: <span id="AnzolGrandeCusto">1000</span> </p>
 
                         <p>+100 Tilapia por clique</p>
                     </div>
 
                 </div>
+
+                 <div class="item">
+                    <div class="containerImage">
+                        <img src="images/items/2632_1_20160606160721.webp" class="=itemimage"
+                        style="width:230px;height:270px;">
+
+                        <div class="botaocompraraitem">
+
+                            <button onclick="buyiscapequena()" class="buybutton">Comprar</button>
+                        </div>
+                    </div>
+
+                    <div class="containerTexto">
+                        <p>Isca Pequena: <span id="IscaPequenaQuant">0</span></p>
+
+                        <p>Isca Pequena custo: <span id="IscaPequenaCusto">5000</span> </p>
+
+                        <p>+5% de tilapias por segundo</p>
+                    </div>
+
+                </div>
+                <div class="item">
+                    <div class="containerImage">
+                        <img src="images/items/Telescopic-Fishing-Sea-Rod-Spinning-Reel-Saltwater-Freshwater-Professional-Fishing-Rod-Kit-Spinning-Rod-and-Reel.webp" class="=itemimage"
+                        style="width:230px;height:270px;">
+
+                        <div class="botaocompraraitem">
+
+                            <button onclick="buyvaraaco()" class="buybutton">Comprar</button>
+                        </div>
+                    </div>
+
+                    <div class="containerTexto">
+                        <p>Vara de Aço: <span id="VaraAcoQuant">0</span></p>
+
+                        <p>Vara de Aço custo: <span id="VaraAcoCusto">10,000</span> </p>
+
+                        <p>+1000 Tilapia por segundo</p>
+                    </div>
+
+                </div>
+                <div class="item">
+                    <div class="containerImage">
+                        <img src="images/items/ATY-2024-070_zoom1.webp" class="=itemimage"
+                        style="width:230px;height:270px;">
+
+                        <div class="botaocompraraitem">
+
+                            <button onclick="buyanzoldourado()" class="buybutton">Comprar</button>
+                        </div>
+                    </div>
+
+                    <div class="containerTexto">
+                        <p>Anzol Dourado: <span id="AnzolDouradoQuant">0</span></p>
+
+                        <p>Anzol Dourado custo: <span id="AnzolDouradoCusto">50,000</span> </p>
+
+                        <p>+1000 Tilapia por clique</p>
+                    </div>
+
+                </div>
+                <div class="item">
+                    <div class="containerImage">
+                        <img src="images/items/1159411550d70723ad1.webp" class="=itemimage"
+                        style="width:230px;height:270px;">
+
+                        <div class="botaocompraraitem">
+
+                            <button onclick="buyiscagrande()" class="buybutton">Comprar</button>
+                        </div>
+                    </div>
+
+                    <div class="containerTexto">
+                        <p>Isca Grande: <span id="IscaGrandeQuant">0</span></p>
+
+                        <p>Isca Grande custo: <span id="IscaGrandeCusto">100,000</span> </p>
+
+                        <p>+20% de tilapias por segundo</p>
+                    </div>
+
+                </div>
+                <div class="item">
+                    <div class="containerImage">
+                        <img src="images/items/download (1).jfif" class="=itemimage"
+                        style="width:230px;height:270px;">
+
+                        <div class="botaocompraraitem">
+
+                            <button onclick="buyvaraprofissional()" class="buybutton">Comprar</button>
+                        </div>
+                    </div>
+
+                    <div class="containerTexto">
+                        <p>Vara Profissional: <span id="VaraProfisssionalQuant">0</span></p>
+
+                        <p>Vara de Aço custo: <span id="VaraProfissionalCusto">150,000</span> </p>
+
+                        <p>+50000 Tilapia por segundo</p>
+                    </div>
+
+                </div>
+                <div class="item">
+                    <div class="containerImage">
+                        <img src="images/items/HTB1rSj3OFXXXXcUapXXq6xXFXXXs.jpg_640x640Q90.jpg_.webp" class="=itemimage"
+                        style="width:230px;height:270px;">
+
+                        <div class="botaocompraraitem">
+
+                            <button onclick="buyanzoltubarao()" class="buybutton">Comprar</button>
+                        </div>
+                    </div>
+
+                    <div class="containerTexto">
+                        <p>Anzol Tubarão: <span id="AnzolTubaraoQuant">0</span></p>
+
+                        <p>Anzol Tubarão custo: <span id="AnzolTubaraoCusto">300,000</span> </p>
+
+                        <p>+100000 Tilapia por clique</p>
+                    </div>
+
+                </div>
+                <div class="item">
+                    <div class="containerImage">
+                        <img src="images/items/memed-io-output.jpeg" class="=itemimage"
+                        style="width:230px;height:270px;">
+
+                        <div class="botaocompraraitem">
+
+                            <button onclick="buytilapio()" class="buybutton">Comprar</button>
+                        </div>
+                    </div>
+
+                    <div class="containerTexto">
+                        <p>Tilapio: <span id="TilapioQuant">0</span></p>
+
+                        <p>Tilapio custo: <span id="TilapioCusto">500,000</span> </p>
+
+                        <p>+300000 Tilapia por clique</br>+200000 Tilapia por segundo</br>+50% de tilapias por segundo</p>
+                    </div>
+
+                </div>
             </div>
           </div>
+        </center>
     </body>
 </html>
